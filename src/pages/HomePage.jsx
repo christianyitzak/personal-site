@@ -100,7 +100,7 @@ function HomePage() {
                             </p>
                         </div>
                     </div>
-                    <div>
+                    <div className="flex items-center">
                         <p className="text-[#b4b4b4] text-sm">2025 - Now</p>
                     </div>
                 </div>
