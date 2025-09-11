@@ -2,18 +2,13 @@ import { NavLink } from "react-router";
 
 function Header() {
     return (
-        <header className="p-5 flex justify-between">
-            <div className="text-[#b4b4b4] flex gap-5 text-sm">
-                <NavLink to="/" className="py-1 px-2 rounded-xs">
+        <header className="p-5 flex justify-between max-w-2xl mx-auto">
+            <div className="text-[#b4b4b4] flex gap-2 text-sm">
+                <NavLink to="/" className="py-1 px-2 rounded-sm">
                     Home
                 </NavLink>
-                <NavLink to="/about" className="py-1 px-2 rounded-xs">
-                    About
-                </NavLink>
-                <NavLink to="/blog" className="py-1 px-2 rounded-xs">
-                    Blog
-                </NavLink>
-                <NavLink to="/projects" className="py-1 px-2 rounded-xs">
+
+                <NavLink to="/projects" className="py-1 px-2 rounded-sm">
                     Projects
                 </NavLink>
             </div>
