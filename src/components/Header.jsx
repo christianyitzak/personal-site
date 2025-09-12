@@ -3,7 +3,7 @@ import { NavLink } from "react-router";
 function Header() {
     return (
         <header className="p-5 flex justify-between max-w-2xl mx-auto">
-            <div className="text-[#b4b4b4] flex gap-2 text-sm">
+            {/* <div className="text-[#b4b4b4] flex gap-2 text-sm">
                 <NavLink to="/" className="py-1 px-2 rounded-sm">
                     Home
                 </NavLink>
@@ -11,22 +11,23 @@ function Header() {
                 <NavLink to="/projects" className="py-1 px-2 rounded-sm">
                     Projects
                 </NavLink>
+            </div> */}
+
+            <div>
+                <p className="text-[#b4b4b4] text-sm font-semibold">
+                    Christian Yitzak
+                </p>
             </div>
 
             <button>
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
+                    height="24px"
+                    viewBox="0 -960 960 960"
+                    width="24px"
                     fill="#b4b4b4"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="#b4b4b4"
-                    className="size-5"
                 >
-                    <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
-                    />
+                    <path d="M360-240v-80h480v80H360Zm0-200v-80h480v80H360ZM120-640v-80h720v80H120Z" />
                 </svg>
             </button>
         </header>
